@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчетный калькулятор аминокислотного состава крови</title>
+<script defer src="./script/index.4966fdc577a352128af8.js"></script><link href="./style/index.b33cddcf70dda6d5d0a8.css" rel="stylesheet"></head>
+<body>
+    <header class="header header_calc header_active">
+        <div class="header__img">
+            <picture><source srcset="img/main/bg_calc.webp" type="image/webp"> <img src="img/main/bg_calc.jpg" alt="background"> </picture>
+        </div>
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="header__title">
+                    Расчетный калькулятор аминокислотного состава крови
+                </h1>
+            </div>
+        </div>
+    </header>
+    <header class="header header_result">
+        <div class="header__img">
+            <picture><source srcset="img/main/bg_result.webp" type="image/webp"> <img src="img/main/bg_result.jpg" alt="background"> </picture>
+        </div>
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="header__title">
+                    Результаты
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="calculation">
+            <div class="container">
+                <form action="#" class="calculation-form calculation_active">
+                    <div class="calculation-info">
+                        <div class="calculation-info__item">
+                            <label>Возраст пациента:</label>
+                            <input aria-label="age" name="age" type="text">
+                        </div>
+                        <div class="calculation-info__item">
+                            <label>ИМТ:</label>
+                            <input aria-label="index" name="index" type="text">
+                        </div>
+                    </div>
+                    <h2 class="calculation-form__title">
+                        Отметьте те аминокислоты, чьи значения ниже нормальных показателей:
+                    </h2>
+                    <ul class="calculation-form-list">
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Аланин" aria-label="checkbox" name="Ala" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Аланин (Ala)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Аргинин" aria-label="checkbox" name="Arg" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Аргинин (Arg)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Аспарагиновая кислота" aria-label="checkbox" name="Asp" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Аспарагиновая кислота (Asp)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Валин" aria-label="checkbox" name="Val" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Валин (Val)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Глицин" aria-label="checkbox" name="Gly" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Глицин (Gly)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Глутаминовая кислота" aria-label="checkbox" name="Glu" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Глутаминовая кислота (Glu)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Лейцин" aria-label="checkbox" name="Leu" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Лейцин (Leu)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Изолейцин" aria-label="checkbox" name="Ile" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Изолейцин (Ile)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Лизин" aria-label="checkbox" name="Lysine" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Лизин (Lysine)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Метионин" aria-label="checkbox" name="Met" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Метионин (Met)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Орнитин" aria-label="checkbox" name="Orn" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Орнитин (Orn)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Пролин" aria-label="checkbox" name="Pro" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Пролин (Pro)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Серин" aria-label="checkbox" name="Serine" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Серин (Serine)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Тирозин" aria-label="checkbox" name="Tyr" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Тирозин (Tyr)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Триптофан" aria-label="checkbox" name="Tryptophan" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Триптофан (Tryptophan)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Фенилаланин" aria-label="checkbox" name="Phe" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Фенилаланин (Phe)</span>
+                            </label>
+                        </li>
+                        <li class="calculation-form-list__item">
+                            <label class="calculation-form-checkbox">
+                                <input class="calculation-form-checkbox__input" value="Цитруллин" aria-label="checkbox" name="Cit" type="checkbox">
+                                <span class="calculation-form-checkbox__square">
+                                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5562 0.375L12.0637 1.4325L5.5275 10.86H4.02L0.375 5.7525L1.8825 4.34625L4.77375 7.04625L10.5562 0.375Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="calculation-form-checkbox__name">Цитруллин (Cit)</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <button class="button calculation-form__submit">
+                        Получить результат
+                    </button>
+                </form>
+                <div class="calculation-result">
+                    <div class="calculation-result__wrapper">
+                        <div class="calculation-info">
+                            <div class="calculation-info__item">
+                                <label>Возраст пациента:</label>
+                                <div class="calculation-info__data_age">
+                                    <span>20</span> лет
+                                </div>
+                            </div>
+                            <div class="calculation-info__item">
+                                <label>ИМТ:</label>
+                                <div class="calculation-info__data_index">
+                                    <span>20</span> кг/м&#178;
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="calculation-result-list">
+                            <li class="calculation-result-list__item">
+                                Дефицит аргинина
+                            </li>
+                            <li class="calculation-result-list__item">
+                                Дефицит аргинина
+                            </li>
+
+                        </ol>
+                        <div class="calculation-result__products">
+                            тыквенные семечки, кешью, миндаль, моллюски, бобовые, фисташки.
+                        </div>
+                    </div>
+                    <button class="button calculation-result__reset">
+                        Новый рассчет
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
